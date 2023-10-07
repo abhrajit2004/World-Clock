@@ -12,6 +12,18 @@ const updateTime = () => {
         timeZone: 'Asia/Shanghai',
     }).split(", ")[1]
 
+    japan.innerHTML = d.toLocaleString('en-US', {
+        timeZone: 'Asia/Tokyo',
+    }).split(", ")[1]
+
+    australia.innerHTML = d.toLocaleString('en-US', {
+        timeZone: 'Australia/Melbourne',
+    }).split(", ")[1]
+
+    europe.innerHTML = d.toLocaleString('en-US', {
+        timeZone: 'Europe/Paris',
+    }).split(", ")[1]
+
     let alarmhour = alarm.value.split(":")[0];
     let alarmmin = alarm.value.split(":")[1];
 
